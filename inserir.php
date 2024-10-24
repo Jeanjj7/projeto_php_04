@@ -1,3 +1,5 @@
+<link rel='stylesheet' href='estilo.css'> 
+<div>
 <?php
 include "conexao.php";
 
@@ -14,10 +16,20 @@ VALUES ('$cpf', '$nome', '$data', '$celular')";
 $inserir = $pdo->prepare($sql);
 
 // 3º Passo - Tentar executar
+
 try {
   $inserir->execute();
-  echo "Cadastrado com sucesso"; 
+  echo "
+  <div id='success_message'>
+  <h1>Cadastrado com sucesso</h1> 
+  </div>
+  ";
+
 } catch (PDOException $erro) {
   echo "Falha no inserir! " . $erro->getMessage();
 }
+
+
 ?>
+
+</div>

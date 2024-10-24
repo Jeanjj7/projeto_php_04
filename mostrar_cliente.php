@@ -37,6 +37,7 @@ try{
         $celular_cliente = $cliente['celular_cliente'];
         
         echo "
+        <div id='conteiner_cartoes'>
             <div class='cartoes'>
                 CPF: $cpf_cliente <br>
                 Nome: $nome_cliente <br>
@@ -49,6 +50,8 @@ try{
                     <button>🗑️Deletar</button>
                 </a>
             </div>
+        </div>
+
         ";
    }
 

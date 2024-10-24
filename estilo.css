@@ -9,6 +9,8 @@
 body{
     margin: 0px;
     font-family: 'Arial';
+
+
 }
 
 #conteudo{
@@ -34,6 +36,12 @@ body{
 
 
 }
+#conteiner_cartoes {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+
+}
 
 .cartoes:hover{
     transform: scale(1.2);
@@ -49,6 +57,14 @@ a{
 a:hover{
     background-color: lightblue;
     color: black;
+}
+#rodape{
+    height: 100px;
+    background-color: rgb(94, 0, 131);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /**/
@@ -140,4 +156,19 @@ a:hover{
     }
 }
 
+/**/
+/**/
+#success_message {
+    background-color: #4a0044;
+    color: #ffffff;
+    padding: 10px;
+    border: 2px solid #e100bb;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
 /**/

@@ -11,6 +11,6 @@
     <?php include "menu_topo.php"; ?>
     <iframe src="pagina_inicial.php" id="conteudo" name="conteudo">
     </iframe>
-
+    <?php include "rodape.php"; ?>
 </body>
 </html>
